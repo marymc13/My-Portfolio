@@ -63,7 +63,7 @@ header nav ul li a:hover {
 
 .flex-container {
     display:flex;
-    
+    justify-content: space-around;
 }
 
 .photo1 img {
@@ -72,11 +72,62 @@ header nav ul li a:hover {
 }
 
 .photo2 img{
-width: 1500px;
+width: 700px;
 height: 300px;
+
 }
 
 /*End Header*/
+
+/*Footer*/
+
+footer {
+    padding: 20px 35px;
+    background-color:blue;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+}
+
+footer div {
+    font-weight: normal;
+    font-size: 30px;
+    color: black;
+    margin: 0;
+    
+}
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer nav {
+    margin: 7px 0;
+}
+
+footer nav ul {
+    margin: 7px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+footer nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size:1.55vw;
+} 
+
+/*End Footer Syle*/
+
 
 .about-me, .my-work {
     font-size: 52px;
