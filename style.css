@@ -77,13 +77,12 @@ header nav ul li a:hover {
 
 .photo2 img{
     flex-basis: 100%;
-    -ms-flex-align: end;
-    height: 300px; 
-    flex: right;
+     height: 300px; 
+    flex: center;
     display: flex;
     justify-content: right;
     align-items:flex-end;
-    width: 700px;
+    width: 650px;
 }
 
 /*End Header*/
@@ -137,6 +136,8 @@ footer nav ul li a {
 
 /*End Footer Syle*/
 
+/*About Me */
+
 main {
     display: flex;
     justify-content: space-between;
@@ -145,75 +146,118 @@ main {
 
 
 main span p{
-    margin-left: 250px;
-    font-size: 20px;
+    margin-left: 100px;
+    font-size: 25px;
     text-align: left;
-    padding: 0 20px 0 0;
+    padding: 0;
 }
 
 .bio, .professional {
     width: 100%;
-    margin: 0;
+    margin: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: normal;
+    padding: 10px;
 }
 
 h2 {
-    
-    border-right: 1px solid blue;
-    -ms-text-align-last:center;
+     -ms-text-align-last:center;
     padding: 0 30px 0 20px;
 }
 
 .photo3-img {
     flex-basis: 100%;
-    -ms-flex-align: end;
+    
     height: 300px; 
-    width: 600px;
+    width: 650px;
     display: flex;
     justify-content: right;
-    margin-left: 270px;
+   margin-left: 100px;
     background-image: url("./images/hero-bg.jpg");
     text-align: center;
     display: block;
 }
     
-a {
-   "https://marymc13.github.io/run-buddy/"
-}
-
 .text {
     font-size: 40px;
     font-weight: normal;
-    position: relative;
+    margin-left: 100px;
 }
-
-
-.horiseon {
+.future {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ .horiseon, .game {
   box-sizing: border-box;
   width: 300px;
-  height: 200px;
+  height: 100px;
   padding: 10px;
-  margin: 100px;
-  border: 1px solid black;
+  margin: 12px;
   text-align: center;
   margin-left: 500px;
   background-color: green;
-  font-size: 50px;
-   
+  font-size: 40px;  
+  flex-direction: row;
 }
 
-.game {
+/*End Me*/
+
+/*Media Queries*/
+
+@media screen and (max-width: 980px) {
+    
+    body {
+        background-color: rgb(72, 165, 196);
+    }
+    
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+       }  
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+       }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+       }
+
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+       }
+
+    footer nav li ul a {
+        text-align: center;
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .photo3 img {
+        max-width: 100%;
+        height: auto;
+    }
 
 }
 
-.parakeet {
-
+@media screen and (max-width: 768) {
+    body {
+        font-size: 125%;
+    }
 }
 
-.code-quiz {
-
+@media screen and (max-width: 575px) {
+    body {
+       font-size: 125%;
 }
