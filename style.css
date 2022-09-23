@@ -64,6 +64,8 @@ header nav ul li a:hover {
 .flex-container {
     display:flex;
     justify-content: space-around;
+    margin: 1rem;
+    flex-wrap: wrap;
 }
 
 .photo1 img {
@@ -252,6 +254,10 @@ h2 {
     .photo3 img {
         max-width: 100%;
         height: auto;
+    }
+
+    .flex-container{
+        flex-direction: column;
     }
 
 }
